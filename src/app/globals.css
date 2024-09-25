@@ -1,0 +1,63 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+//! IMPORT FONT FAMILY
+@font-face {
+  font-family: "Sunday Afternoon";
+  src: url("/fonts/SundayAfternoon.woff") format("woff"),
+    url("/fonts/SundayAfternoon.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sunday Afternoon Italic";
+  src: url("/fonts/SundayAfternoon-Italic.woff") format("woff"),
+    url("/fonts/SundayAfternoon-Italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "PPRightGrotesk";
+  src: url("/fonts/PPRightGrotesk-Medium.otf") format("opentype");
+  font-weight: normal; /* or 400 */
+  font-style: normal;
+}
+@font-face {
+  font-family: "PPRightGrotesk Compact Black";
+  src: url("/fonts/PPRightGrotesk-CompactBlack.otf") format("opentype");
+  font-weight: bold; /* or 700 */
+  font-style: normal;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+:root {
+  --accent: rgba(236, 241, 244, 1);
+  --dark: rgba(20, 19, 51, 1);
+  --indigo: rgba(14, 14, 44, 1);
+  --light: rgba(250, 252, 254, 1);
+  --primary-color: rgba(0, 82, 156, 1);
+  --secondary-color: rgba(231, 112, 14, 1);
+  --tertiary-color: rgba(159, 192, 229, 1);
+  --text-dark: rgba(22, 22, 39, 1);
+  --textbody: rgba(74, 74, 104, 1);
+  --variable-collection-blue-BRI-prioritas: rgba(20, 19, 51, 1);
+}
